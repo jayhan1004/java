@@ -1,0 +1,43 @@
+package pm;
+import java.util.*;
+public class Sub01 {
+	public static void run() {
+		//public - 다른곳에서도 사용가능
+		//private - 이 클래스에서만 사용가능
+		//안쓸때 - package안에서 아무데나
+		boolean run = true;
+		Scanner scan = new Scanner(System.in);
+		
+		ArrayList<Sale> sales = new ArrayList<>();
+		Sale s1 = new Sale();
+		s1.code="Refri_S_01";
+		s1.name="삼성 비스포크";
+		s1.price=430;
+		s1.qnt=12;
+		sales.add(s1);
+		Sale s2 = new Sale("Note_M-08","Prestige-17",150,7);
+		sales.add(s2);
+		while(run) {
+			System.out.println("\n----------Sale Administrator-----------");
+			System.out.println("1.상품등록|2.상품목록|3.상품조회|4.상품삭제|0.종료");
+			System.out.println("--------------------------------------");
+			System.out.print("메뉴선택>");
+			String menu = scan.nextLine();
+			switch(menu)
+			{case "1" : break;
+			case "2" : for(Sale s:sales) {s.print_land();} 
+				break;
+			case "3" : break;
+			case "4" : break;
+			case "0" :run=false; break;
+			default : System.out.println("0~4번 메뉴 중 선택하십시오.");
+			}//switch
+			}//while
+			System.out.println("상품관리자를 종료합니다."); 
+		
+		
+		
+		
+		
+	}
+}

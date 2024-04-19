@@ -1,0 +1,12 @@
+package am;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("---------");
+		Sub01 s = new Sub01(); //Sub01에 static 없을때 객체 선언 따로 해야함
+		s.run();
+	}
+
+}

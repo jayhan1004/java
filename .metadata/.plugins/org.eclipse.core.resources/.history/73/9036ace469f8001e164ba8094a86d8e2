@@ -1,0 +1,26 @@
+package am;
+
+public class Sub01 {
+	public static void run() {
+		Car car1 = new Car();
+		car1.company = "현대";
+		car1.model = "그랜저";
+		car1.color = "블랙";
+		car1.distance = 80000;
+		car1.date = "2021-08;
+		car1.print();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

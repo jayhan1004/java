@@ -1,0 +1,51 @@
+package am;
+import java.util.*;
+public class Sub01 {
+	public static void run() {
+		ArrayList<Car> cars = new ArrayList<>();
+		Car car = new Car(1, "현대", "그랜저", "블랙", 20000, "2020-03");
+		cars.add(car);
+		car = new Car(2, "쉐보레", "티볼리", "블루", 35000, "2022-09");
+		cars.add(car);
+		car = new Car(3, "기아", "K5", "화이트", 70000, "2017-12");
+		cars.add(car);
+		
+		boolean run=true;
+		Scanner scan=new Scanner(System.in);
+		  
+		while(run) {
+		     System.out.println("--------------------------------------------");
+		System.out.println("1.차량등록|2.차량검색|3.차량목록|4.차량삭제|0.종료");
+		System.out.println("--------------------------------------------");
+		System.out.print("선택>");
+		String menu=scan.nextLine();
+		switch(menu) {
+		case "1":
+		   break;
+		case "2":
+		   break;
+		case "3"://차량목록
+			System.out.println("번호\t브랜드\t모델명\t색상\t주행거리\t연식");
+			for (Car c:cars)
+				{System.out.printf("%d\t%s\t%s\t%s\t%,d\t%s",
+						c.getNo(), c.getCompany(), c.getModel(), c.getColor(), c.getDistance(), c.getDate());}
+			System.out.println("현재 " + cars.size() + "개의 데이터가 등록되어 있습니다.");
+		   break;
+		case "4":
+		   break;
+		case "0":
+		System.out.println("프로그램을 종료합니다.");
+		   run=false;
+		   break;
+		default:
+			System.out.println("0~4메뉴를 선택하세요!");
+		}
+		}//while
+	}//run
+				
+		
+		
+		
+		
+	}
+

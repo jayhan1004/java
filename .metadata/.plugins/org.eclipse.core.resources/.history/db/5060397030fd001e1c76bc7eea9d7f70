@@ -1,0 +1,18 @@
+package sale;
+
+import java.util.*;
+
+public class SaleVO { //자바빈
+	private int seq;
+	private String code;
+	private Date sale_date;
+	private int qnt;
+	
+	
+	
+	
+	
+	
+	
+	
+}

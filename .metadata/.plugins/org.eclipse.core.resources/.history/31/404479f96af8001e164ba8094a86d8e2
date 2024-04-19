@@ -1,0 +1,33 @@
+package am;
+import java.util.*;
+public class Sub01 {
+	public static void run() {
+		ArrayList<Car> cars = new ArrayList<>();
+		Car car1 = new Car();
+		car1.company = "현대";
+		car1.model = "그랜저";
+		car1.color = "블랙";
+		car1.distance = 80000;
+		car1.date = "2021-08";
+		car1.print();
+		
+		car1 = new Car();
+		car1.company = "쉐보레";
+		car1.model = "스파크";
+		car1.color = "화이트";
+		car1.distance = 30000;
+		car1.date = "2015-03";
+		car1.print();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

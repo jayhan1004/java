@@ -1,0 +1,19 @@
+package pm;
+
+public class Sub01 {
+	public static void run() {
+		//public - 다른곳에서도 사용가능
+		//private - 이 클래스에서만 사용가능
+		//안쓸때 - package안에서 아무데나
+		System.out.println("Sub01-----------");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

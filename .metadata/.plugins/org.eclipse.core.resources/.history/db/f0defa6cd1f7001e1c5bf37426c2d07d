@@ -1,0 +1,37 @@
+package pm;
+import java.util.*;
+public class Sub01 {
+	public static void run() {
+		//public - 다른곳에서도 사용가능
+		//private - 이 클래스에서만 사용가능
+		//안쓸때 - package안에서 아무데나
+		boolean run = true;
+		Scanner scan = new Scanner(System.in);
+		while(run) {
+			System.out.println("\n------------ 상 품 관 리 자 -------------");
+			System.out.println("1.상품등록|2.상품목록|3.상품조회|4.상품삭제|0.종료");
+			System.out.println("--------------------------------------");
+			System.out.print("메뉴선택>");
+			String menu = scan.nextLine();
+			switch(menu)
+			{case "1" : break;
+			case "2" : break;
+			case "3" : break;
+			case "4" : break;
+			case "0" : break;
+			default : System.out.println("0~4번 메뉴 중 선택하십시오.");
+			
+			
+			
+			
+			
+			}//switch
+			}//while
+		
+		
+		
+		
+		
+		
+	}
+}

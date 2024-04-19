@@ -1,0 +1,33 @@
+package pm;
+
+import java.io.*;
+import java.util.*;
+
+import am.Car;
+//file관련은 io
+
+public class Sub01 {
+	public static void run() {
+		File file = new File("c:/data/java/car.txt");
+		try {BufferedReader reader = new BufferedReader(new FileReader(file));
+		System.out.println("읽기성공");
+		String line="";
+		StringTokenizer st = null; //변수 구분자 불러오기
+		while((line=reader.readLine())!=null) //readLine : 한줄씩 읽는다 //!=null null이 아닐때까지
+		{st = new StringTokenizer(line, ","); //변수 구분자를 ,로
+		int no = Integer.parseInt(st.nextToken());	
+		String company = st.nextToken();
+		String model = st.nextToken();
+		String color = st.nextToken();
+		int distance = Integer.parseInt(st.nextToken());
+		String date = st.nextToken();
+		Car car = new Car(no, company, model, color, distance, date);
+		System.out.println(car.toString());}
+		
+		
+		
+		}
+		catch(Exception e) {System.out.println("오류:" + e.toString());}
+		
+	}
+}

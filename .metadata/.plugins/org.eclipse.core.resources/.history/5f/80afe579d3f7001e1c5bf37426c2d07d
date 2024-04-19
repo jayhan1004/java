@@ -1,0 +1,40 @@
+package pm;
+
+public class Sale {
+	//필드
+	String code;
+	String name;
+	int price;
+	int qnt;
+	
+	
+	//기본생성자 - s1생성
+	public Sale() {}
+	
+	//생성자2 - s2생성
+	public Sale(String code, String name, int price, int qnt) {
+		super();
+		this.code = code;
+		this.name = name;
+		this.price = price;
+		this.qnt = qnt;
+	}
+	
+	//금액(sum)을 구하는 메서드
+	public int sum() {int sum = price * qnt; return sum;}
+	
+
+
+	//내용을 가로출력
+	public void print_land()
+	{System.out.printf("%s\t%s\t%d\t%d\t%d\n",
+			code, name, price, qnt, sum());}
+	
+	//내용을 세로출력
+	public void print_port()
+	{System.out.println("가격:" + price);
+	System.out.println("수량:" + qnt);
+	System.out.println("총액:" + sum());}
+	
+	
+}
